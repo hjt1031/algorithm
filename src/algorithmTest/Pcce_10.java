@@ -22,8 +22,8 @@ public class Pcce_10 {
 
         for (int matsLength : mats) {
             // 공원 크기를 벗어날수 없어서 matsLength 를 제한 둠.
-            for (int i = 0; i <= park.length - matsLength; i++) {
-                for (int j = 0; j <= park[0].length - matsLength; j++) {
+            for (int i = 0; i < park.length - matsLength + 1; i++) {
+                for (int j = 0; j < park[0].length - matsLength + 1; j++) {
                     boolean flags = true;
 
                     if (park[i][j].equals("-1")) {
