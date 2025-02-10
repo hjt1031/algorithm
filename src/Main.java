@@ -1,18 +1,14 @@
+import algorithmTest.FlexibleWork;
 import algorithmTest.Pcce_10;
 import algorithmTest.Pcce_9;
 
 public class Main {
     public static void main(String[] args) {
-//        Pcce_9 pcce9 = new Pcce_9();
-//        System.out.println("solutions.solution Result: " + pcce9.pcce_9(new int[]{50, 50}, new int[]{100, 241}));
+        FlexibleWork flexibleWork = new FlexibleWork();
+        int[] schedules = {700, 800, 1100};
+        int[][] timelogs = {{710, 2359, 1050, 700, 650, 631, 659},{800, 801, 805, 800, 759, 810, 809},{1105, 1001, 1002, 600, 1059, 1001, 1100}};
+        int result = flexibleWork.flex(schedules, timelogs, 5);
 
-        Pcce_10 pcce10 = new Pcce_10();
-        System.out.println(pcce10.pcce_10(new int[]{3, 5, 2}, new String[][]{
-                  {"A", "A", "-1", "B", "B", "B", "B", "-1"}
-                , {"A", "A", "-1", "B", "B", "B", "B", "-1"}
-                , {"-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1"}
-                , {"D", "D", "-1", "-1", "-1", "-1", "E", "-1"}
-                , {"D", "D", "-1", "-1", "-1", "-1", "-1", "F"}
-                , {"D", "D", "-1", "-1", "-1", "-1", "E", "-1"}}));
+        System.out.println("result =====>" + result);
     }
 }
